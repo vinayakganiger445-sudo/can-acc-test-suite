@@ -1,0 +1,151 @@
+{
+  "total": 5,
+  "passed": 1,
+  "failed": 4,
+  "pass_rate": 20.0,
+  "results": [
+    {
+      "name": "Overspeed Detection",
+      "passed": false,
+      "message": "Overspeed detected: 7 violations, max 159.0 km/h",
+      "details": [
+        {
+          "timestamp": 2.5,
+          "speed": 108.0,
+          "threshold": 100.0,
+          "excess": 8.0
+        },
+        {
+          "timestamp": 3.0,
+          "speed": 137.6,
+          "threshold": 100.0,
+          "excess": 37.599999999999994
+        },
+        {
+          "timestamp": 3.5,
+          "speed": 148.08,
+          "threshold": 100.0,
+          "excess": 48.08000000000001
+        },
+        {
+          "timestamp": 4.0,
+          "speed": 159.04,
+          "threshold": 100.0,
+          "excess": 59.03999999999999
+        },
+        {
+          "timestamp": 4.1,
+          "speed": 142.64000000000001,
+          "threshold": 100.0,
+          "excess": 42.640000000000015
+        },
+        {
+          "timestamp": 4.2,
+          "speed": 126.24000000000001,
+          "threshold": 100.0,
+          "excess": 26.24000000000001
+        },
+        {
+          "timestamp": 4.3,
+          "speed": 109.84,
+          "threshold": 100.0,
+          "excess": 9.840000000000003
+        }
+      ],
+      "violation_count": 7,
+      "timestamps": [
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.1,
+        4.2,
+        4.3
+      ]
+    },
+    {
+      "name": "Message Timeout Detection",
+      "passed": false,
+      "message": "Message timeout detected: 1 gaps, max 2.50s",
+      "details": [
+        {
+          "start_time": 6.0,
+          "end_time": 8.5,
+          "gap_duration": 2.5,
+          "threshold": 2.0
+        }
+      ],
+      "violation_count": 1,
+      "timestamps": [
+        6.0
+      ]
+    },
+    {
+      "name": "Emergency Stop Detection",
+      "passed": false,
+      "message": "Emergency stop detected: 4 events",
+      "details": [
+        {
+          "timestamp": 4.0,
+          "brake_pressure": 210,
+          "deceleration": 164.00000000000037,
+          "brake_threshold": 200,
+          "decel_threshold": 20.0
+        },
+        {
+          "timestamp": 4.1,
+          "brake_pressure": 230,
+          "deceleration": 164.00000000000065,
+          "brake_threshold": 200,
+          "decel_threshold": 20.0
+        },
+        {
+          "timestamp": 4.2,
+          "brake_pressure": 240,
+          "deceleration": 164.00000000000065,
+          "brake_threshold": 200,
+          "decel_threshold": 20.0
+        },
+        {
+          "timestamp": 4.3,
+          "brake_pressure": 250,
+          "deceleration": 249.1999999999998,
+          "brake_threshold": 200,
+          "decel_threshold": 20.0
+        }
+      ],
+      "violation_count": 4,
+      "timestamps": [
+        4.0,
+        4.1,
+        4.2,
+        4.3
+      ]
+    },
+    {
+      "name": "Signal Bounds Validation",
+      "passed": true,
+      "message": "All signal values within DBC-defined bounds",
+      "details": [],
+      "violation_count": 0,
+      "timestamps": []
+    },
+    {
+      "name": "Checksum Validation",
+      "passed": false,
+      "message": "Checksum errors detected: 1 invalid messages",
+      "details": [
+        {
+          "timestamp": 4.3,
+          "pressure": 250,
+          "checksum": 255,
+          "expected": 250
+        }
+      ],
+      "violation_count": 1,
+      "timestamps": [
+        4.3
+      ]
+    }
+  ]
+}
