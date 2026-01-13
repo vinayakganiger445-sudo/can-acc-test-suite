@@ -16,7 +16,7 @@
 
 ### Week 1: Foundation (Parsing + 2 Tests)
 
-#### Monday
+#### Monday -Completed
 - [ ] Set up project directory structure
 - [ ] Create virtual environment
 - [ ] Install dependencies from `requirements.txt`
