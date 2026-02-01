@@ -70,6 +70,18 @@ flowchart LR
 | 0x102 | BrakeSystem | BrakePressure (0-255 bar), Checksum | 10ms |
 
 ---
+## Porsche 997 CAN IDs (from Can997.h)
+
+Extracted from the open-source 997 CAN library:
+
+| ID (hex) | Macro name        | Meaning guess          |
+|----------|-------------------|------------------------|
+| 0x242    | CAN_ANTRIEB242    | Powertrain / Antrieb   |
+| 0x245    | CAN_ANTRIEB245    | Powertrain / Antrieb   |
+| 0x441    | CAN_ANTRIEB441    | Powertrain / Antrieb   |
+| 0x308    | CAN_ANTRIEB308    | Powertrain / Antrieb   |
+
+These IDs come from Porsche 997 powertrain.
 
 ## 🚀 Quick Start
 
